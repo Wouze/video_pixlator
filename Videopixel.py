@@ -5,7 +5,7 @@ import time
 
 start_time = time.time()
 
-def pixellize(input_path, output_path, saturation = 1.25, contrast = 1.2, n_colors = 15, superpixel_size = 10):
+def pixellize(input_path, output_path, saturation = 1.4, contrast = 1.4, n_colors = 18, superpixel_size = 5):
 
     # load image
     #img_name = "test.jpg"
@@ -36,17 +36,17 @@ def pixellize(input_path, output_path, saturation = 1.25, contrast = 1.2, n_colo
     img.save(output_path)
 
 
-vidcap = cv2.VideoCapture('input.mp4')
+vidcap = cv2.VideoCapture('input.gif')
 
 fps = vidcap.get(cv2.CAP_PROP_FPS) #to know the frame rate
 
 success, image = vidcap.read()
 count = 0
 while success:
-  cv2.imwrite("frames/frame%d.png" % count, image)     # save frame as PNG file
+  cv2.imwrite("frames/frame%d.jpg" % count, image)     # save frame as jpg file
   success, image = vidcap.read()
   print('Read a new frame: ', success)
-  pixellize("frames/frame%d.png" % count, "pixframes/frame%d.png" % count)
+  pixellize("frames/frame%d.jpg" % count, "pixframes/frame%d.png" % count)
   print('Done coloring the frame: ', count)
   count += 1
 
