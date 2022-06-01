@@ -1,11 +1,19 @@
 from PIL import Image, ImageEnhance
 import cv2
-import os
 import time
+import threading as th
+from moviepy.editor import *
 
+#MoviePy==1.0.3
 start_time = time.time()
+#top -F -R -o cpu
+#threaded gave 116.4 seconds, not threaded gave 225.7 seconds
+threaded = True
 
-def pixellize(input_path, output_path, saturation = 1.25, contrast = 1.2, n_colors = 15, superpixel_size = 10):
+#NOT WORKING
+with_sound = False
+
+def pixellize(input_path, output_path, saturation = 1.25, contrast = 1.2, n_colors = 10, superpixel_size = 5):
 
     # load image
     #img_name = "test.jpg"
@@ -42,13 +50,30 @@ fps = vidcap.get(cv2.CAP_PROP_FPS) #to know the frame rate
 
 success,image = vidcap.read()
 count = 0
+
+
 while success:
-  cv2.imwrite("frames/frame%d.png" % count, image)     # save frame as PNG file
-  success,image = vidcap.read()
-  print('Read a new frame: ', success)
-  pixellize("frames/frame%d.png" % count, "pixframes/frame%d.png" % count)
-  print('Done coloring the frame: ', count)
-  count += 1
+
+    cv2.imwrite("frames/frame%d.jpg" % count, image)     # save frame as JPG file
+
+    success,image = vidcap.read()
+    print('Read a new frame: ', success)
+    if threaded:
+        th.Thread(target=pixellize, args=["frames/frame%d.jpg" % count, "pixframes/frame%d.png" % count]).start()
+        print('Done working on the frame: ', count)
+    else:
+        pixellize("frames/frame%d.jpg" % count, "pixframes/frame%d.png" % count)
+        print('Done coloring the frame: ', count)
+
+    count += 1
+    print("Active threads are: ", th.activeCount())
+
+threads = th.activeCount()
+while threads > 1:
+    time.sleep(0.5)
+    threads = th.activeCount()
+    print("Active threads are: ", threads)
+
 
 print("--- %s seconds ---" % (time.time() - start_time))
 
@@ -83,6 +108,20 @@ for i in range(len(img)):
 
 cv2.destroyAllWindows()
 video.release()
+
+#adding sound  ##NOT WORKING RN
+if with_sound:
+    
+
+    clip = VideoFileClip("input.mp4")
+    clip.audio.write_audiofile(r"input_sound.mp3")
+
+    clip = VideoFileClip("video.mp4")
+    audioclip = AudioFileClip("input_sound.mp3")
+
+    clip_w_sound = clip.set_audio(audioclip)
+
+    clip_w_sound.write_videofile("video with sound.mp4")
 
 print("--- %s seconds ---" % (time.time() - start_time))
 print("---------- DONE! ----------")
