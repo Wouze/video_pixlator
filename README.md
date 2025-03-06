@@ -1,18 +1,14 @@
-# Video_Pixlator Game 🎮
+# Video_Pixlator!
 --------------------------
 Welcome to **Video_Pixlator**! This project is based on my other project that converts images to pixelated images!
 
 This is preview of the project using the famous blender Big Buck Bunny film!
 
 
+
 ## 🔥 Solo Project 🔥
 This project was developed independently, focusing on image video manipulation using .
 
-## 🎮 Gameplay Details 🎮
-
-- **Operating System**: Windows / Web 🎥🌐
-- **Controls**: Keyboard and Mouse ⌨️
-- **Game Type**: 2D Physics-Based Game 🌍
 
 ## 🌟 Key Features 🌟
 
