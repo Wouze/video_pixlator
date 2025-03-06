@@ -1,18 +1,16 @@
-# Video_Pixlator Game 🎮
+# Video_Pixlator!
 --------------------------
 Welcome to **Video_Pixlator**! This project is based on my other project that converts images to pixelated images!
+https://github.com/Wouze/pixelate
 
 This is preview of the project using the famous blender Big Buck Bunny film!
+
+[![Watch the preview!](https://raw.githubusercontent.com/wouze/video_pixlator/main/video.mp4)](https://raw.githubusercontent.com/wouze/video_pixlator/main/input.mp4)
 
 
 ## 🔥 Solo Project 🔥
 This project was developed independently, focusing on image video manipulation using .
 
-## 🎮 Gameplay Details 🎮
-
-- **Operating System**: Windows / Web 🎥🌐
-- **Controls**: Keyboard and Mouse ⌨️
-- **Game Type**: 2D Physics-Based Game 🌍
 
 ## 🌟 Key Features 🌟
 
