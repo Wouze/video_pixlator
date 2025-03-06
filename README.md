@@ -1,6 +1,7 @@
 # Video_Pixlator!
 --------------------------
 Welcome to **Video_Pixlator**! This project is based on my other project that converts images to pixelated images!
+https://github.com/Wouze/pixelate
 
 This is preview of the project using the famous blender Big Buck Bunny film!
 
