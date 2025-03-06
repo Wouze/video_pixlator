@@ -8,6 +8,7 @@ This is preview of the project using the famous blender Big Buck Bunny film!
 [![Watch the preview!](https://raw.githubusercontent.com/wouze/video_pixlator/main/video.mp4)](https://raw.githubusercontent.com/wouze/video_pixlator/main/input.mp4)
 
 
+
 ## 🔥 Solo Project 🔥
 This project was developed independently, focusing on image video manipulation using .
 
