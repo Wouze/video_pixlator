@@ -7,10 +7,8 @@ This is preview of the project using the famous blender Big Buck Bunny film!
 
 Input | Results 
 :-: | :-:
-<video src='https://raw.githubusercontent.com/wouze/video_pixlator/main/input.mp4' width=180/> | <video src='https://raw.githubusercontent.com/wouze/video_pixlator/main/video.mp4' width=180 />
+https://github.com/user-attachments/assets/6b615185-881d-41e7-a74f-82e04a83437d | https://github.com/user-attachments/assets/c8c2cf9f-d1e7-4f87-b712-d5693c81878d
 
-
-[Video_title](https://raw.githubusercontent.com/wouze/video_pixlator/main/input.mp4)
 
 
 
@@ -35,7 +33,7 @@ This project was developed independently, focusing on image video manipulation u
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Abo7mood/StickBounce-game.git
+   git clone https://github.com/Wouze/video_pixlator
    ```
 2. Add your ```input.mp4``` video.
 3. Run ```video pixelate.py```!.
