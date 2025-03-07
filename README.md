@@ -12,7 +12,7 @@ https://github.com/user-attachments/assets/c8c2cf9f-d1e7-4f87-b712-d5693c81878d
 
 
 ## 🔥 Solo Project 🔥
-This project was developed independently, focusing on image video manipulation using .
+This project was developed independently, focusing on image video manipulation using Python.
 
 
 ## 🌟 Key Features 🌟
