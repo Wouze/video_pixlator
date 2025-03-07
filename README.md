@@ -5,9 +5,8 @@ https://github.com/Wouze/pixelate
 
 This is preview of the project using the famous blender Big Buck Bunny film!
 
-Input | Results 
-:-: | :-:
-https://github.com/user-attachments/assets/6b615185-881d-41e7-a74f-82e04a83437d | https://github.com/user-attachments/assets/c8c2cf9f-d1e7-4f87-b712-d5693c81878d
+https://github.com/user-attachments/assets/6b615185-881d-41e7-a74f-82e04a83437d
+https://github.com/user-attachments/assets/c8c2cf9f-d1e7-4f87-b712-d5693c81878d
 
 
 
