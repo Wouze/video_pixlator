@@ -4,9 +4,11 @@ Welcome to **Video_Pixlator**! This project is based on my other project that co
 https://github.com/Wouze/pixelate
 
 This is preview of the project using the famous blender Big Buck Bunny film!
-
+- Input
 https://github.com/user-attachments/assets/6b615185-881d-41e7-a74f-82e04a83437d
 
+- Output
+https://github.com/user-attachments/assets/c8c2cf9f-d1e7-4f87-b712-d5693c81878d
 
 
 ## 🔥 Solo Project 🔥
