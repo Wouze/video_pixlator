@@ -9,6 +9,11 @@ Input | Results
 :-: | :-:
 <video src='https://raw.githubusercontent.com/wouze/video_pixlator/main/input.mp4' width=180/> | <video src='https://raw.githubusercontent.com/wouze/video_pixlator/main/video.mp4' width=180 />
 
+
+[Video_title](https://raw.githubusercontent.com/wouze/video_pixlator/main/input.mp4)
+
+
+
 ## 🔥 Solo Project 🔥
 This project was developed independently, focusing on image video manipulation using .
 
