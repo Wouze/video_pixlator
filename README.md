@@ -5,10 +5,9 @@ https://github.com/Wouze/pixelate
 
 This is preview of the project using the famous blender Big Buck Bunny film!
 
-[![Watch the preview!](https://raw.githubusercontent.com/wouze/video_pixlator/main/video.mp4)]
-
-(https://raw.githubusercontent.com/wouze/video_pixlator/main/input.mp4)
-
+Result | Input 
+:-: | :-:
+<video src='video.mp4' /> | <video src='input.mp4' />
 
 
 ## 🔥 Solo Project 🔥
